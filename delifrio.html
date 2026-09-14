@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delifrio Açaí | O melhor açaí de Caruaru</title>
+
+    <meta name="description"
+        content="Delifrio Açaí em Caruaru - PE. Açaí, sorvetes e acompanhamentos deliciosos. Venha nos visitar ou peça pelo WhatsApp.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        :root {
+            --roxo: #54218c;
+            --roxo-escuro: #29103f;
+            --roxo-claro: #7d3fc1;
+            --rosa: #ef4f9d;
+            --rosa-claro: #ff85c2;
+            --branco: #ffffff;
+            --cinza: #f7f5fa;
+            --texto: #28202e;
+            --verde: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            color: var(--texto);
+            background: #fff;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 18px 6%;
+            background: rgba(41, 16, 63, 0.92);
+            backdrop-filter: blur(15px);
+        }
+
+        .nav {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: white;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #8e45d5, #ef4f9d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,.2);
+        }
+
+        .logo-text {
+            font-family: Poppins, sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .logo-text span {
+            color: var(--rosa-claro);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            color: var(--rosa-claro);
+        }
+
+        .nav-button {
+            padding: 12px 20px;
+            border-radius: 30px;
+            background: white;
+            color: var(--roxo-escuro) !important;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+            background: var(--rosa-claro);
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 100vh;
+            padding: 150px 6% 80px;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(41,16,63,.98) 0%,
+                    rgba(41,16,63,.92) 42%,
+                    rgba(41,16,63,.35) 70%,
+                    rgba(41,16,63,.05) 100%
+                ),
+                url("https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=1800&q=90")
+                center/cover;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 1250px;
+            width: 100%;
+            margin: auto;
+            color: white;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,.13);
+            border: 1px solid rgba(255,255,255,.25);
+            padding: 10px 16px;
+            border-radius: 50px;
+            margin-bottom: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero h1 {
+            font-family: Poppins, sans-serif;
+            font-size: clamp(45px, 7vw, 85px);
+            line-height: 1;
+            max-width: 800px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: var(--rosa-claro);
+        }
+
+        .hero p {
+            max-width: 620px;
+            font-size: 20px;
+            line-height: 1.7;
+            color: #eee;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #ef4f9d, #9d46d6);
+            color: white;
+            box-shadow: 0 15px 35px rgba(239,79,157,.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 45px rgba(239,79,157,.4);
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--roxo-escuro);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-4px);
+        }
+
+        /* ================= STATS ================= */
+
+        .stats {
+            background: white;
+            box-shadow: 0 10px 40px rgba(40,20,60,.08);
+            position: relative;
+            z-index: 10;
+            margin: -50px auto 0;
+            width: 88%;
+            max-width: 1050px;
+            border-radius: 25px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            text-align: center;
+        }
+
+        .stat {
+            padding: 10px 20px;
+            border-right: 1px solid #eee;
+        }
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+        .stat strong {
+            font-family: Poppins, sans-serif;
+            display: block;
+            color: var(--roxo);
+            font-size: 28px;
+        }
+
+        .stat span {
+            color: #777;
+        }
+
+        /* ================= SECTIONS ================= */
+
+        section {
+            padding: 100px 6%;
+        }
+
+        .container {
+            max-width: 1250px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title small {
+            color: var(--rosa);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-title h2 {
+            font-family: Poppins, sans-serif;
+            font-size: clamp(32px,5vw,52px);
+            color: var(--roxo-escuro);
+            margin-top: 10px;
+        }
+
+        .section-title p {
+            max-width: 650px;
+            margin: 15px auto 0;
+            color: #777;
+            line-height: 1.7;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about {
+            background: var(--cinza);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            height: 570px;
+            object-fit: cover;
+            border-radius: 35px;
+            box-shadow: 0 30px 70px rgba(70,20,100,.2);
+        }
+
+        .floating-card {
+            position: absolute;
+            bottom: 25px;
+            right: -25px;
+            background: white;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,.15);
+            font-weight: 700;
+        }
+
+        .about-text small {
+            color: var(--rosa);
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .about-text h2 {
+            font-family: Poppins, sans-serif;
+            color: var(--roxo-escuro);
+            font-size: 45px;
+            margin: 12px 0 20px;
+        }
+
+        .about-text p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .check-list {
+            list-style: none;
+            display: grid;
+            gap: 14px;
+            margin-top: 25px;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .check {
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            background: #f5d9ec;
+            color: var(--roxo);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* ================= MENU ================= */
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 45px rgba(50,20,70,.09);
+            transition: .35s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(50,20,70,.16);
+        }
+
+        .product-image {
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            height: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        .product:hover img {
+            transform: scale(1.07);
+        }
+
+        .product-content {
+            padding: 25px;
+        }
+
+        .product-content h3 {
+            font-family: Poppins, sans-serif;
+            color: var(--roxo-escuro);
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .product-content p {
+            color: #777;
+            line-height: 1.6;
+        }
+
+        /* ================= EXPERIENCE ================= */
+
+        .experience {
+            background: linear-gradient(135deg,#32114c,#61279b);
+            color: white;
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .experience-card {
+            padding: 35px;
+            border: 1px solid rgba(255,255,255,.15);
+            background: rgba(255,255,255,.08);
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+        }
+
+        .experience-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .experience-card h3 {
+            font-family: Poppins, sans-serif;
+            margin-bottom: 10px;
+        }
+
+        .experience-card p {
+            color: #e3dbea;
+            line-height: 1.7;
+        }
+
+        /* ================= REVIEWS ================= */
+
+        .reviews {
+            background: var(--cinza);
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .review {
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(50,20,70,.06);
+        }
+
+        .stars {
+            color: #ffb400;
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .review p {
+            line-height: 1.7;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .review-author {
+            margin-top: 22px;
+            font-weight: 800;
+            color: var(--roxo);
+        }
+
+        /* ================= LOCATION ================= */
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            align-items: stretch;
+        }
+
+        .location-info {
+            padding: 40px;
+            background: var(--roxo-escuro);
+            color: white;
+            border-radius: 30px;
+        }
+
+        .location-info h2 {
+            font-family: Poppins, sans-serif;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 15px;
+            margin: 25px 0;
+            align-items: flex-start;
+        }
+
+        .info-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 13px;
+            background: rgba(255,255,255,.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .info-item strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .info-item span {
+            color: #d8cde0;
+            line-height: 1.5;
+        }
+
+        .map {
+            border-radius: 30px;
+            overflow: hidden;
+            min-height: 430px;
+            background: #eee;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 430px;
+            border: 0;
+        }
+
+        /* ================= CTA ================= */
+
+        .cta {
+            padding: 90px 6%;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(70,25,105,.96),
+                    rgba(150,53,127,.92)
+                ),
+                url("https://images.pexels.com/photos/8230023/pexels-photo-8230023.jpeg?auto=compress&cs=tinysrgb&w=1600")
+                center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-family: Poppins, sans-serif;
+            font-size: clamp(35px,5vw,58px);
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 650px;
+            margin: 0 auto 30px;
+            color: #f1e9f5;
+            font-size: 18px;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #1b0b29;
+            color: white;
+            padding: 50px 6% 25px;
+        }
+
+        .footer-grid {
+            max-width: 1250px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+        }
+
+        footer h3 {
+            font-family: Poppins, sans-serif;
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer li {
+            color: #b9afc1;
+            line-height: 1.8;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        .copyright {
+            max-width: 1250px;
+            margin: 40px auto 0;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,.1);
+            text-align: center;
+            color: #8d8297;
+        }
+
+        /* ================= WHATSAPP ================= */
+
+        .whatsapp {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            width: 62px;
+            height: 62px;
+            background: var(--verde);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            z-index: 999;
+            box-shadow: 0 10px 30px rgba(0,0,0,.2);
+            transition: .3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+        /* ================= RESPONSIVO ================= */
+
+        @media(max-width: 900px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 130px;
+                background:
+                    linear-gradient(
+                        rgba(41,16,63,.82),
+                        rgba(41,16,63,.82)
+                    ),
+                    url("https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?auto=format&fit=crop&w=1200&q=85")
+                    center/cover;
+            }
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+            .stat {
+                border-right: 0;
+                border-bottom: 1px solid #eee;
+                padding: 15px;
+            }
+
+            .stat:last-child {
+                border-bottom: 0;
+            }
+
+            .about-grid,
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .menu-grid,
+            .review-grid,
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image img {
+                height: 420px;
+            }
+
+            .floating-card {
+                right: 15px;
+            }
+        }
+
+        @media(max-width: 550px) {
+
+            section {
+                padding: 75px 5%;
+            }
+
+            .hero {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .about-text h2 {
+                font-size: 35px;
+            }
+
+            .location-info {
+                padding: 30px 25px;
+            }
+
+            .whatsapp {
+                width: 55px;
+                height: 55px;
+                right: 18px;
+                bottom: 18px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="nav">
+
+            <a href="#inicio" class="logo">
+
+                <div class="logo-icon">
+                    🍇
+                </div>
+
+                <div class="logo-text">
+                    Delifrio <span>Açaí</span>
+                </div>
+
+            </a>
+
+            <nav>
+
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#menu">Açaí</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#localizacao">Localização</a>
+
+                <a
+                    href="https://wa.me/5581993956788"
+                    target="_blank"
+                    class="nav-button">
+                    Pedir agora
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                ⭐ 4,6 estrelas no Google
+            </div>
+
+            <h1>
+                O sabor do
+                <span>açaí de verdade.</span>
+            </h1>
+
+            <p>
+                Aquele açaí cremoso, geladinho e cheio de sabor
+                para deixar seu dia muito mais gostoso.
+                Venha conhecer a Delifrio Açaí em Caruaru.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    href="https://wa.me/5581993956788"
+                    target="_blank"
+                    class="btn btn-primary">
+
+                    📲 Pedir pelo WhatsApp
+
+                </a>
+
+                <a
+                    href="#menu"
+                    class="btn btn-white">
+
+                    🍇 Ver nossos açaís
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+
+    <div class="stats">
+
+        <div class="stat">
+            <strong>4,6 ⭐</strong>
+            <span>Avaliação no Google</span>
+        </div>
+
+        <div class="stat">
+            <strong>264+</strong>
+            <span>Avaliações de clientes</span>
+        </div>
+
+        <div class="stat">
+            <strong>R$ 1–20</strong>
+            <span>Faixa de preço</span>
+        </div>
+
+    </div>
+
+
+    <!-- ================= SOBRE ================= -->
+
+    <section class="about" id="sobre">
+
+        <div class="container">
+
+            <div class="about-grid">
+
+                <div class="about-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=1000&q=90"
+                        alt="Açaí servido com frutas e granola">
+
+                    <div class="floating-card">
+                        🍇 Açaí de verdade
+                    </div>
+
+                </div>
+
+                <div class="about-text">
+
+                    <small>DELIFRIO AÇAÍ</small>
+
+                    <h2>
+                        Um lugar para
+                        se apaixonar por açaí.
+                    </h2>
+
+                    <p>
+                        Se você está em Caruaru e quer um açaí de verdade,
+                        já sabe onde encontrar.
+                    </p>
+
+                    <p>
+                        Na Delifrio Açaí você encontra aquele açaí
+                        cremoso e saboroso, além de uma variedade de
+                        opções para montar seu pedido do seu jeito.
+                    </p>
+
+                    <ul class="check-list">
+
+                        <li>
+                            <span class="check">✓</span>
+                            Açaí delicioso e cremoso
+                        </li>
+
+                        <li>
+                            <span class="check">✓</span>
+                            Variedade de acompanhamentos
+                        </li>
+
+                        <li>
+                            <span class="check">✓</span>
+                            Ambiente agradável
+                        </li>
+
+                        <li>
+                            <span class="check">✓</span>
+                            Atendimento excelente
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section id="menu">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>Nosso cardápio</small>
+
+                <h2>
+                    Açaí para todos os gostos
+                </h2>
+
+                <p>
+                    Escolha seu favorito e aproveite uma experiência
+                    deliciosa na Delifrio Açaí.
+                </p>
+
+            </div>
+
+
+            <div class="menu-grid">
+
+
+                <!-- PRODUTO 1 -->
+
+                <div class="product">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/8230023/pexels-photo-8230023.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                            alt="Açaí na tigela">
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <h3>Açaí na Tigela</h3>
+
+                        <p>
+                            Nosso clássico açaí servido bem gelado,
+                            perfeito para matar a vontade de um
+                            açaí delicioso.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUTO 2 -->
+
+                <div class="product">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/5232938/pexels-photo-5232938.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                            alt="Açaí com frutas">
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <h3>Açaí com frutas</h3>
+
+                        <p>
+                            Combine o açaí com frutas fresquinhas,
+                            criando uma mistura colorida e cheia
+                            de sabor.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUTO 3 -->
+
+                <div class="product">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.pexels.com/photos/14167805/pexels-photo-14167805.jpeg?auto=compress&cs=tinysrgb&w=1000"
+                            alt="Açaí com granola e frutas">
+
+                    </div>
+
+                    <div class="product-content">
+
+                        <h3>Açaí com Delininho</h3>
+
+                        <p>
+                            Uma combinação especial para quem
+                            gosta de deixar o açaí ainda mais
+                            gostoso.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EXPERIÊNCIA ================= -->
+
+    <section class="experience">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small style="color:#ff85c2;">
+                    Por que escolher a Delifrio?
+                </small>
+
+                <h2 style="color:white;">
+                    Mais que açaí.
+                </h2>
+
+                <p style="color:#ddd;">
+                    Uma experiência gostosa para você aproveitar
+                    sozinho, com amigos ou com a família.
+                </p>
+
+            </div>
+
+
+            <div class="experience-grid">
+
+                <div class="experience-card">
+
+                    <div class="experience-icon">
+                        🍇
+                    </div>
+
+                    <h3>Açaí delicioso</h3>
+
+                    <p>
+                        Aquele sabor que dá vontade de pedir
+                        mais uma vez.
+                    </p>
+
+                </div>
+
+
+                <div class="experience-card">
+
+                    <div class="experience-icon">
+                        ❤️
+                    </div>
+
+                    <h3>Atendimento excelente</h3>
+
+                    <p>
+                        Nossa equipe está pronta para receber
+                        você da melhor maneira.
+                    </p>
+
+                </div>
+
+
+                <div class="experience-card">
+
+                    <div class="experience-icon">
+                        🚗
+                    </div>
+
+                    <h3>Do seu jeito</h3>
+
+                    <p>
+                        Coma no local, utilize o drive-thru
+                        ou peça para receber sem contato.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= AVALIAÇÕES ================= -->
+
+    <section class="reviews" id="avaliacoes">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>Clientes</small>
+
+                <h2>
+                    Quem experimenta, recomenda.
+                </h2>
+
+                <p>
+                    Confira alguns comentários deixados por
+                    nossos clientes.
+                </p>
+
+            </div>
+
+
+            <div class="review-grid">
+
+
+                <div class="review">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “Ambiente ótimo, atendimento excelente,
+                        ótimos profissionais. Recomendo a todos!”
+                    </p>
+
+                    <div class="review-author">
+                        Cliente Delifrio
+                    </div>
+
+                </div>
+
+
+                <div class="review">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “Que sorvete de ninho, café, banana,
+                        morango, o açaí e o cupuaçu maravilhosos.”
+                    </p>
+
+                    <div class="review-author">
+                        Cliente Delifrio
+                    </div>
+
+                </div>
+
+
+                <div class="review">
+
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        “Melhor açaí da cidade, além de ter
+                        uma boa variedade de sorvetes.”
+                    </p>
+
+                    <div class="review-author">
+                        Cliente Delifrio
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LOCALIZAÇÃO ================= -->
+
+    <section id="localizacao">
+
+        <div class="container">
+
+            <div class="location-grid">
+
+
+                <div class="location-info">
+
+                    <h2>
+                        Venha nos visitar
+                    </h2>
+
+                    <p>
+                        Estamos esperando por você.
+                        Passe na Delifrio Açaí e experimente
+                        nosso açaí.
+                    </p>
+
+
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <strong>Endereço</strong>
+
+                            <span>
+                                Praça Gercino Tabosa, 225<br>
+                                Nossa Sra. das Dores<br>
+                                Caruaru - PE<br>
+                                CEP 55004-390
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                            📞
+                        </div>
+
+                        <div>
+
+                            <strong>Telefone / WhatsApp</strong>
+
+                            <span>
+                                (81) 99395-6788
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <div class="info-icon">
+                            🚗
+                        </div>
+
+                        <div>
+
+                            <strong>Serviços</strong>
+
+                            <span>
+                                Comer no local<br>
+                                Drive-thru<br>
+                                Entrega sem contacto
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="https://wa.me/5581993956788"
+                        target="_blank"
+                        class="btn btn-primary">
+
+                        📲 Falar no WhatsApp
+
+                    </a>
+
+                </div>
+
+
+                <div class="map">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Praça%20Gercino%20Tabosa,%20225,%20Caruaru,%20PE&output=embed"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <h2>
+                Bora tomar um açaí? 🍇
+            </h2>
+
+            <p>
+                Chame a Delifrio Açaí no WhatsApp,
+                faça seu pedido ou venha conhecer nosso espaço.
+            </p>
+
+            <a
+                href="https://wa.me/5581993956788"
+                target="_blank"
+                class="btn btn-white">
+
+                📲 Pedir agora pelo WhatsApp
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>
+                    🍇 Delifrio Açaí
+                </h3>
+
+                <p>
+                    Aquele açaí cremoso, geladinho e delicioso
+                    para deixar seu dia muito melhor.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Navegação
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#inicio">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a href="#menu">Açaí</a>
+                    </li>
+
+                    <li>
+                        <a href="#avaliacoes">Avaliações</a>
+                    </li>
+
+                    <li>
+                        <a href="#localizacao">Localização</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contato
+                </h3>
+
+                <p>
+                    📍 Caruaru - PE
+                </p>
+
+                <p>
+                    📞 (81) 99395-6788
+                </p>
+
+                <p>
+                    🍇 Loja de Açaí
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Delifrio Açaí — Todos os direitos reservados.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= WHATSAPP ================= -->
+
+    <a
+        class="whatsapp"
+        href="https://wa.me/5581993956788"
+        target="_blank"
+        aria-label="WhatsApp">
+
+        ☎
+
+    </a>
+
+
+</body>
+</html>
